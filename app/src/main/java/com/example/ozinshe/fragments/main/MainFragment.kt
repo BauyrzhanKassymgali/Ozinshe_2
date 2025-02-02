@@ -42,13 +42,15 @@ class MainFragment : Fragment() {
         viewModel.getMoviesByCategoryMain(token)
         val adapterMoviesByCategory = MoviesByCategoryMainAdapter()
         viewModel.moviesByCategoryMainModel.observe(viewLifecycleOwner){ list ->
-            if (list.isNullOrEmpty()) {
+            Log.d("AAX", "Полный ответ от сервера: $list")
+            if (list.isNullOrEmpty()|| list[0].movies.isNullOrEmpty()){
                 Log.d("AAC", "Данные отсутствуют или некорректны.")
                 binding.categoryTitle1Text.text = "Нет данных"
             } else {
                 Log.d("AAC", "Получены данные: $list")
-                val firstMovie = list[0].movies
-                binding.categoryTitle1Text.text = firstMovie.toString()
+                Log.d("AAV", "movies: ${list[0].movies}")
+                val firstMovie = list[0].movies[0].name
+                binding.categoryTitle1Text.text = firstMovie
                 adapterMoviesByCategory.submitList(list[0].movies)
             }
         }
