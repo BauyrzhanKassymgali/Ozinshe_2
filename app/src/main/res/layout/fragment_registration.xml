@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.login.LoginFragment"
+    android:weightSum="100">
+
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ic_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="ic_back"
+        app:srcCompat="@drawable/back"
+        tools:ignore="TouchTargetSizeCheck"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_salem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registr"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/sfprodisplaybold"
+        android:textSize="24sp"
+        android:textColor="@color/txt_btn"
+        app:layout_constraintTop_toBottomOf="@+id/ic_back"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_acckiru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/fill_info"
+        android:textColor="@color/descrip"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_salem"
+        app:layout_constraintStart_toStartOf="@id/txt_salem"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/email"
+            android:textSize="14sp"
+            android:textColor="@color/title"
+            android:fontFamily="@font/sfprodisplaybold"
+            app:layout_constraintTop_toBottomOf="@+id/txt_acckiru"
+            app:layout_constraintStart_toStartOf="@id/txt_acckiru"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edText_email"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/custom_edittext_focus_action"
+            android:drawableStart="@drawable/ic_message"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:hint="@string/hint_email"
+            android:paddingStart="16dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:textColorHint="@color/hint_color"
+            tools:ignore="RtlSymmetry,VisualLintTextFieldSize"
+            app:layout_constraintTop_toBottomOf="@+id/txt_email" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:layout_marginTop="12dp"
+            android:textSize="14sp"
+            android:textColor="@color/title"
+            android:fontFamily="@font/sfprodisplaybold"
+            app:layout_constraintTop_toBottomOf="@+id/edText_email"
+            app:layout_constraintStart_toStartOf="@+id/edText_email"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/ed_text_pass"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/custom_edittext_focus_action"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:paddingEnd="16dp"
+            android:textColorHint="@color/hint_color"
+            tools:ignore="RtlSymmetry,VisualLintTextFieldSize"
+            app:layout_constraintTop_toBottomOf="@id/txt_password"
+            app:layout_constraintStart_toStartOf="@id/edText_email"
+            app:layout_constraintEnd_toEndOf="@id/edText_email"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ic_toggleRegistr"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="ic_toggle"
+        app:layout_constraintBottom_toBottomOf="@+id/ed_text_pass"
+        app:layout_constraintEnd_toEndOf="@id/ed_text_pass"
+        app:layout_constraintTop_toTopOf="@+id/ed_text_pass"
+        app:srcCompat="@drawable/ic_show_password"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtRepeat_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/repeat_pass"
+            android:layout_marginTop="13dp"
+            android:textSize="14sp"
+            android:textColor="@color/title"
+            android:fontFamily="@font/sfprodisplaybold"
+            app:layout_constraintTop_toBottomOf="@+id/ed_text_pass"
+            app:layout_constraintStart_toStartOf="@+id/ed_text_pass"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edText_RepeatPass"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/custom_edittext_focus_action"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:paddingEnd="16dp"
+            android:textColorHint="@color/hint_color"
+            tools:ignore="RtlSymmetry,VisualLintTextFieldSize"
+            app:layout_constraintTop_toBottomOf="@+id/txtRepeat_pass"
+            app:layout_constraintStart_toStartOf="@+id/ed_text_pass"
+            app:layout_constraintEnd_toEndOf="@id/ed_text_pass"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ic_toggleRegistrRepeat"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="ic_toggle2"
+        app:layout_constraintBottom_toBottomOf="@+id/edText_RepeatPass"
+        app:layout_constraintEnd_toEndOf="@id/edText_RepeatPass"
+        app:layout_constraintTop_toTopOf="@+id/edText_RepeatPass"
+        app:srcCompat="@drawable/ic_show_password"
+        tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_error_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:visibility="gone"
+            tools:text="@string/txt_error_passtoregistr"
+            android:textColor="@color/stroke_error"
+            android:textSize="14sp"
+            android:fontFamily="@font/sfprodisplayregular"
+            app:layout_constraintTop_toBottomOf="@+id/edText_RepeatPass"
+            app:layout_constraintStart_toStartOf="@id/edText_RepeatPass"
+            app:layout_constraintEnd_toEndOf="@id/edText_RepeatPass"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_error_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:visibility="gone"
+        tools:text="@string/txt_error_passtoregistr"
+        android:textColor="@color/stroke_error"
+        android:textSize="14sp"
+        android:fontFamily="@font/sfprodisplayregular"
+        app:layout_constraintTop_toBottomOf="@+id/txt_error_email"
+        app:layout_constraintStart_toStartOf="@id/txt_error_email"
+        app:layout_constraintEnd_toEndOf="@id/txt_error_email"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_registr"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/custom_button_purple"
+            android:text="@string/registr"
+            android:textAllCaps="false"
+            android:fontFamily="@font/sfprodisplaysemibold"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="16sp"
+            tools:ignore="VisualLintButtonSize"
+            app:layout_constraintTop_toBottomOf="@id/txt_error_pass"
+            app:layout_constraintStart_toStartOf="@id/edText_RepeatPass"
+            app:layout_constraintEnd_toEndOf="@id/edText_RepeatPass"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/btn_registr"
+        app:layout_constraintEnd_toEndOf="@id/btn_registr"
+        app:layout_constraintTop_toBottomOf="@id/btn_registr">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:text="@string/have_acc"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/signInBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/sfprodisplaysemibold"
+            android:text="@string/registr"
+            android:textColor="@color/purple"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

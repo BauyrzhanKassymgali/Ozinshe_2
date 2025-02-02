@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Ozinshe</string>
+    <string name="home_fragment">Home fragment</string>
+    <string name="btn_skip">Өткізу</string>
+    <string name="btn_next">Әрі қарай</string>
+    <string name="title">ÖZINŞE-ге қош келдің!</string>
+    <string name="descrip_1">Фильмдер, телехикаялар, ситкомдар, анимациялық жобалар, телебағдарламалар мен реалити-шоулар, аниме және тағы басқалары</string>
+    <string name="descrip_2">Кез келген құрылғыдан қара Сүйікті фильміңді  қосымша төлемсіз телефоннан, планшеттен, ноутбуктан қара</string>
+    <string name="descrip_3">Тіркелу оңай. Қазір тіркел де қалаған фильміңе қол жеткіз</string>
+    <string name="salem">Сәлем</string>
+    <string name="acc_kiriniz">Аккаунтқа кіріңіз</string>
+    <string name="email">Email</string>
+    <string name="password">Құпия сөз</string>
+    <string name="hint_email">Сіздің email</string>
+    <string name="hint_password">Сіздің құпия сөзіңіз</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="password_redirect">Құпия сөзді ұмыттыңыз ба?</string>
+    <string name="kiru">Кіру </string>
+    <string name="no_acc">Аккаунтыңыз жоқ па?</string>
+    <string name="registr">Тіркелу</string>
+    <string name="or">Немесе</string>
+    <string name="apple_id">Apple ID-мен тіркеліңіз</string>
+    <string name="google_acc">Google-мен тіркеліңіз</string>
+    <string name="repeat_pass">Құпия сөзді қайталаңыз</string>
+    <string name="have_acc">Сізде аккаунт бар ма?</string>
+    <string name="fill_info">Деректерді толтырыңыз</string>
+    <string name="txt_error">Қате формат</string>
+    <string name="txt_error_noacc">Мұндай email-ы бар пайдаланушы тіркелмеген</string>
+    <string name="txt_error_passtoregistr">Мұндай email-ы бар пайдаланушы тіркелген</string>
+    <string name="txt_error_pass">Құпия сөздің ұзындығы 6 таңбадан кем емес</string>
+    <string name="txt_error_emptyPass">Құпия сөзді енгізіңіз</string>
+    <string name="txt_error_emptyEmail">Email енгізіңіз</string>
+    <string name="check_pass">Екі пароль бірдей емес</string>
+    <string name="home">Home</string>
+    <string name="favourite">Favourite</string>
+    <string name="profile">Profile</string>
+    <string name="search">Search</string>
+    <string name="titleMainfragment">Қызғалдақтар мекені </string>
+
+</resources>

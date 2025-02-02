@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#D1D5DB</color>
+    <color name="purple">#B376F7</color>
+    <color name="txt_btn">#111827</color>
+    <color name="grey_ind">#D1D5DB</color>
+    <color name="title">#111827</color>
+    <color name="descrip">#6B7280</color>
+    <color name="stroke">#E5EBF0</color>
+    <color name="stroke_2">#E5E7EB</color>
+    <color name="hint_color">#9CA3AF</color>
+    <color name="stroke_focus">#9753F0</color>
+    <color name="stroke_error">#FF402B</color>
+    <color name="fui_transparent">#F8EEFF</color>
+    <color name="primary_500">#7E2DFC</color>
+</resources>

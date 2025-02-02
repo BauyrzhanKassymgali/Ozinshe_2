@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgMainMovie"
+        android:layout_width="0dp"
+        android:layout_height="164dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/roundimageview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/sfprodisplaybold"
+        android:text="@string/titleMainfragment"
+        android:textSize="14sp"
+        android:textColor="@color/title"
+        app:layout_constraintStart_toStartOf="@id/imgMainMovie"
+        app:layout_constraintTop_toBottomOf="@id/imgMainMovie"/>
+
+    <TextView
+        android:id="@+id/tvTextDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:lines="2"
+        android:text="dawlkdjawlkjdlkawjdlkjawdjioajwdioawjodijawodjawojdoawjd"
+        android:ellipsize="end"
+        android:textSize="12sp"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:textColor="@color/hint_color"
+        app:layout_constraintTop_toBottomOf="@id/tvTextTitle"
+        app:layout_constraintStart_toStartOf="@id/imgMainMovie"
+        app:layout_constraintEnd_toEndOf="@id/imgMainMovie"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/custom_button_white"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
+        android:backgroundTint="@color/primary_500"
+        android:text="Телехикая"
+        android:textSize="12sp"
+        android:fontFamily="@font/sfprodisplaymedium"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/imgMainMovie"
+        app:layout_constraintTop_toTopOf="@id/imgMainMovie"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
